@@ -1,16 +1,21 @@
-# whatsweb
+# WhatsWeb
 
-A new Flutter project.
+WhatsWeb es un proyecto Flutter que proporciona una interfaz personalizada para acceder a WhatsApp Web desde una aplicación móvil. La aplicación permite a los usuarios navegar por WhatsApp Web con funciones adicionales, como la gestión de temas (oscuro y claro), manejo de descargas y navegación dentro de la propia aplicación.
 
-## Getting Started
+## Características
 
-This project is a starting point for a Flutter application.
+- **Navegador Web Integrado:** Accede a la versión web de WhatsApp directamente desde la aplicación usando `flutter_inappwebview`.
+- **Gestión de Temas:** Cambia entre los temas oscuro y claro, con la opción de guardar la preferencia del tema usando `SharedPreferences`.
+- **Manejo de Descargas:** Descarga archivos desde WhatsApp Web utilizando `FlutterDownloader`.
+- **Menú de Opciones:** Incluye un menú lateral para cambiar de tema, recargar la página o cerrar la aplicación.
+- **Permisos Gestionados:** Solicita permisos esenciales, como el uso del micrófono, para mejorar la experiencia de WhatsApp Web.
 
-A few resources to get you started if this is your first Flutter project:
+## Paquetes Utilizados
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- `flutter_downloader`: Para gestionar descargas desde la web.
+- `flutter_inappwebview`: Para integrar un navegador web dentro de la aplicación.
+- `path_provider`: Para obtener rutas de almacenamiento en el dispositivo.
+- `permission_handler`: Para manejar permisos del dispositivo.
+- `shared_preferences`: Para guardar preferencias de usuario, como el estado del tema.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
